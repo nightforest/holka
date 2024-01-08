@@ -1,0 +1,70 @@
+.lang
+    position: relative
+
+    &.is-active
+
+        .lang__list
+            opacity: 1
+            visibility: visible
+            transform: translateY(0)
+
+        .lang__icon
+            transform: rotateX(180deg)
+
+    &__toggle
+        display: flex
+        align-items: center
+        gap: 12px
+        padding: 5px 12px
+        height: 40px
+        border-radius: 100px
+        border: 1px solid #DEDEDE
+        font-size: 22px
+        line-height: 1
+        text-transform: uppercase
+        color: var(--black)
+        transition: border-color .5s ease
+
+        @media ($max-md)
+            font-size: 16px
+            gap: 6px
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            border-color: var(--red)
+
+    &__icon
+        color: var(--red)
+        transition: transform .5s ease
+
+        @media ($max-md)
+            width: 10px
+            height: 6px
+
+    &__list
+        position: absolute
+        top: calc(100% + 10px)
+        left: 0
+        width: 100%
+        background: var(--white)
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06), 0 0 4px 0 rgba(0, 0, 0, .04)
+        border-radius: 20px
+        margin: 0
+        padding: 0
+        list-style: none
+        padding: 7px 12px
+        opacity: 0
+        visibility: hidden
+        transform: translateY(10px)
+        transition: all .25s ease
+
+    &__link
+        display: flex
+        font-size: 22px
+        text-transform: uppercase
+        color: var(--black)
+        transition: color .5s ease
+
+        @media ($max-md)
+            font-size: 16px

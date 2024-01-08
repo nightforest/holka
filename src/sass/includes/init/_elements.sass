@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after
+    box-sizing: border-box
+
+html
+    position: relative
+    min-height: 100%
+    scroll-behavior: smooth
+
+::selection
+    background: var(--red)
+    color: var(--white)
+
+body
+    display: flex
+    flex-direction: column
+    min-height: 100vh
+    font-size: 16px
+    line-height: 1.4
+    font-family: var(--font)
+    font-weight: 400
+    color: var(--font-color)
+    background-color: var(--bg-color)
+    backface-visibility: hidden
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-weight: 700
+    margin: 0
+
+a
+    text-decoration: none
+    color: var(--red)
+
+    &:hover,
+    &:active
+        color: var(--red)
+        text-decoration: none
+
+    &:focus-visible
+        color: var(--red)
+        outline: none
+        text-decoration: none
+
+    // &:visited
+    //     color: inherit
+    //     font-weight: 400
+
+p
+    margin: 0 0 1rem
+
+strong
+    font-weight: 700
+
+blockquote
+    position: relative
+    display: flex
+    padding: 30px 45px
+    border-radius: 20px
+    background: var(--white)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06), 0 0 4px 0 rgba(0, 0, 0, .04)
+    text-align: center
+    margin: 0 0 1rem
+
+    @media ($max-md)
+        padding: 33px 20px
+
+    &:before
+        position: absolute
+        top: 15px
+        right: 20px
+        width: 37px
+        height: 30px
+        background: url("data:image/svg+xml,%3Csvg width='37' height='30' viewBox='0 0 37 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M36.0254 10.456C36.0254 14.2107 35.0867 17.7947 33.2094 21.208C31.2467 24.6213 28.7294 27.4373 25.6574 29.656L20.9214 25.816C22.9694 24.4507 24.8041 22.616 26.4254 20.312C28.0467 18.0933 28.9427 15.96 29.1134 13.912H28.4734C28.0467 13.9973 27.7054 14.04 27.4494 14.04C25.6574 14.04 24.2067 13.4 23.0974 12.12C21.9027 10.9253 21.3054 9.38934 21.3054 7.512C21.3054 5.63467 21.9881 4.01334 23.3534 2.648C24.6334 1.368 26.2121 0.728004 28.0894 0.728004C30.3081 0.728004 32.1854 1.58134 33.7214 3.288C35.2574 5.08 36.0254 7.46933 36.0254 10.456ZM15.5454 10.456C15.5454 14.2107 14.6067 17.7947 12.7294 21.208C10.7667 24.6213 8.24939 27.4373 5.17739 29.656L0.441387 25.816C2.48939 24.4507 4.32406 22.616 5.94539 20.312C7.48139 18.0933 8.37739 15.96 8.63339 13.912H7.99339C7.56672 13.9973 7.22539 14.04 6.96939 14.04C5.17739 14.04 3.68405 13.4 2.48939 12.12C1.29472 10.9253 0.697388 9.38934 0.697388 7.512C0.697388 5.63467 1.38005 4.01334 2.74539 2.648C4.11072 1.368 5.73206 0.728004 7.60939 0.728004C9.82806 0.728004 11.7054 1.58134 13.2414 3.288C14.7774 5.08 15.5454 7.46933 15.5454 10.456Z' fill='%23952E34' style='fill:%23952E34;fill:color(display-p3 0.5843 0.1804 0.2039);fill-opacity:1;'/%3E%3C/svg%3E%0A") no-repeat center center
+        content: ""
+
+        @media ($max-md)
+            width: 27px
+            height: 21px
+            background-size: contain
+            top: 10px
+            right: 10px
+
+    &:after
+        position: absolute
+        bottom: 15px
+        left: 20px
+        width: 37px
+        height: 30px
+        background: url("data:image/svg+xml,%3Csvg width='37' height='30' viewBox='0 0 37 30' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.974609 19.544C0.974609 15.7893 1.91328 12.2053 3.79061 8.792C5.75328 5.37866 8.27061 2.56266 11.3426 0.343994L16.0786 4.184C14.0306 5.54933 12.1959 7.384 10.5746 9.688C8.95328 11.9067 8.05728 14.04 7.88661 16.088H8.52661C8.95328 16.0027 9.29461 15.96 9.55061 15.96C11.3426 15.96 12.7933 16.6 13.9026 17.88C15.0973 19.0747 15.6946 20.6107 15.6946 22.488C15.6946 24.3653 15.0119 25.9867 13.6466 27.352C12.3666 28.632 10.7879 29.272 8.91061 29.272C6.69194 29.272 4.81461 28.4187 3.27861 26.712C1.74261 24.92 0.974609 22.5307 0.974609 19.544ZM21.4546 19.544C21.4546 15.7893 22.3933 12.2053 24.2706 8.792C26.2333 5.37866 28.7506 2.56266 31.8226 0.343994L36.5586 4.184C34.5106 5.54933 32.6759 7.384 31.0546 9.688C29.5186 11.9067 28.6226 14.04 28.3666 16.088H29.0066C29.4333 16.0027 29.7746 15.96 30.0306 15.96C31.8226 15.96 33.3159 16.6 34.5106 17.88C35.7053 19.0747 36.3026 20.6107 36.3026 22.488C36.3026 24.3653 35.6199 25.9867 34.2546 27.352C32.8893 28.632 31.2679 29.272 29.3906 29.272C27.1719 29.272 25.2946 28.4187 23.7586 26.712C22.2226 24.92 21.4546 22.5307 21.4546 19.544Z' fill='%23952E34' style='fill:%23952E34;fill:color(display-p3 0.5843 0.1804 0.2039);fill-opacity:1;'/%3E%3C/svg%3E%0A") no-repeat center center
+        content: ""
+
+        @media ($max-md)
+            width: 27px
+            height: 21px
+            background-size: contain
+            bottom: 10px
+            left: 10px
+
+    p
+        margin: 0
+
+    strong
+        text-decoration: underline
+        display: inline
+
+.red-link 
+    color: var(--red)
+    text-decoration: underline
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        color: var(--red)
+        text-decoration: none
+
+.red-color 
+    color: var(--red)
+
+.p-big
+    font-size: 20px
+
+    @media ($max-md)
+        font-size: 14px
+
+.container
+    width: 100%
+    margin: 0 auto
+    padding: 0 15px
+
+    @media ($min-sm)
+        max-width: 100%
+
+    @media ($min-md)
+        max-width: 768px
+
+    @media ($min-lg)
+        max-width: 960px
+
+    @media ($min-xl)
+        max-width: 1140px
+
+    &--fluid
+        max-width: 100%
+
+.main
+    flex: 1
+    padding-top: 108px
+    background-image: linear-gradient(180deg, rgba(217, 217, 217, .3) 0%, #fff 100%)
+    background-repeat: no-repeat
+    background-size: 100% 670px
+
+    @media ($max-md)
+        padding-top: 70px
+    
+    &--flex
+        display: flex
+        flex-direction: column
+
+.page-header
+    margin-bottom: 30px
+
+    @media ($max-md)
+        margin-bottom: 15px
+
+.section-title
+    margin: 0
+    font-size: 35px
+    font-weight: 700
+    line-height: 1.2
+    text-align: center
+
+    @media ($max-md)
+        font-size: 24px
+
+.scroll-disabled
+    overflow-y: hidden
+
+
+.animation-fade,
+.animation-left,
+.animation-right,
+.animation-down,
+.animation-up
+    opacity: 0
+
+input,
+textarea,
+button,
+select,
+a
+    -webkit-tap-highlight-color: transparent
+
+.iti
+    display: block
+
+.iti--separate-dial-code .iti__selected-flag
+    background: none !important
+    font-size: 16px
+    outline: none
+    padding: 0 10px 0 0
+    color: #fff
+
+.iti__country-list
+    color: #000
+
+.iti__arrow
+    border-top-color: #fff
+
+    &--up
+        border-bottom-color: #fff
+
+audio
+
+    &::-webkit-media-controls-panel
+        background-color: #E7F0FF

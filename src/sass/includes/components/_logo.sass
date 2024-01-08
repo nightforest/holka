@@ -1,0 +1,25 @@
+.logo
+    display: flex
+
+    &__link
+        display: inline-flex
+        line-height: 1
+        transition: transform .5s ease
+        color: var(--black)
+
+        &:hover,
+        &:active
+            color: var(--black)
+
+        &:focus-visible
+            color: var(--black)
+            transform: scale(1.1)
+
+    &__img
+        max-width: 100%
+        height: auto
+
+    &--white
+
+        .logo__link
+            color: var(--white)

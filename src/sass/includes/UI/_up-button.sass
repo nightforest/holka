@@ -1,0 +1,25 @@
+.up-button
+    position: absolute
+    bottom: -20px
+    right: 5%
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 40px
+    padding: 5px
+    background: var(--red)
+    border: 1px solid var(--black)
+    border-radius: 50%
+    color: var(--white)
+    transition: all .5s ease
+
+    @media ($max-md)
+        right: calc(50% - 20px)
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        border-color: var(--white)
+        background: var(--white)
+        color: var(--red)

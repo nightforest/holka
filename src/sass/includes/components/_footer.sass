@@ -1,0 +1,131 @@
+.footer
+
+    &__top
+        position: relative
+        padding: 80px 0
+        background: var(--red) url(../img/footer-bg.svg) no-repeat top -150px center
+
+        @media ($max-md)
+            padding: 45px 0
+            background-size: 160px
+            background-position: right top -30px
+
+    &__middle
+        padding: 50px 0
+        background: var(--black)
+
+        @media ($max-md)
+            padding: 25px 0
+
+        &-container
+            display: flex
+            gap: 70px
+
+            @media ($max-lg)
+                flex-direction: column
+                gap: 30px
+        
+        &-col
+            position: relative
+            display: flex
+            align-items: center
+
+            @media ($max-lg)
+                justify-content: center
+
+            &:not(:last-child)
+
+                &:before
+                    position: absolute
+                    top: 0
+                    right: -35px
+                    width: 1px
+                    height: 100%
+                    background: #888991
+                    content: ""
+
+                    @media ($max-lg)
+                        top: auto
+                        bottom: -15px
+                        width: 90px
+                        height: 1px
+                        right: calc(50% - 45px)
+
+            &--6
+                width: 100%
+
+    &__social
+
+        .social__list
+
+            @media ($max-lg)
+                justify-content: center
+
+    &__logo
+        min-width: 190px
+
+        @media ($max-md)
+            min-width: 0
+            height: 57px
+            width: auto
+        
+    &__phone
+        margin-bottom: 15px
+
+        .phone__number
+            font-size: 18px
+            line-height: 1.3
+
+            &:hover,
+            &:active,
+            &:focus-visible
+                color: var(--red)
+
+    &__bottom
+        padding: 10px 0
+        
+        &-container
+            display: flex
+            align-items: center
+            justify-content: space-between
+            gap: 10px
+
+            @media ($max-md)
+                flex-direction: column
+                text-align: center
+
+    &__dev
+        display: inline-flex
+        align-items: center
+        gap: 20px
+        font-size: 16px
+
+        @media ($max-md)
+            font-size: 14px
+
+        &-link
+            display: flex
+
+        &-img
+            width: 109px
+            height: auto
+
+    &__copyright
+        font-size: 16px
+
+        @media ($max-md)
+            font-size: 14px
+
+    &__descr
+        margin: 0
+        color: var(--white)
+        line-height: 1.55
+
+        @media ($max-md)
+            font-size: 14px
+
+        @media ($max-lg)
+            text-align: center
+
+        @media ($max-md)
+            font-size: 12px

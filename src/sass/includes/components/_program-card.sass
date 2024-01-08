@@ -1,0 +1,40 @@
+.program-card
+    position: relative
+    border-radius: 20px
+    background: var(--white)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06), 0 0 4px 0 rgba(0, 0, 0, .04)
+    padding: 45px 15px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    overflow: hidden
+    min-height: 165px
+
+    @media ($max-md)
+        min-height: 110px
+        padding: 30px 15px
+
+    &__title
+        margin: 0
+        font-size: 16px
+        font-weight: 600
+        line-height: 1.55
+    
+    &__number
+        position: absolute
+        bottom: -10px
+        right: 12px
+        line-height: 1
+        font-size: 47px
+        font-weight: 700
+        background: linear-gradient(to bottom, var(--red), var(--white))
+        -webkit-text-stroke: 4px transparent
+        -webkit-background-clip: text
+        text-transform: capitalize
+        color: var(--white)
+        opacity: .8
+
+        @media ($max-md)
+            font-size: 38px

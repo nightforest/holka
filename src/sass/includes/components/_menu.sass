@@ -1,0 +1,53 @@
+.menu
+
+    &__list
+        display: flex
+        align-items: center
+        gap: 55px
+        padding: 0
+        margin: 0
+        list-style: none
+
+        @media ($max-xl)
+            gap: 30px
+
+        @media ($max-lg)
+            gap: 20px
+
+    &__item
+        display: flex
+        line-height: 1.2
+       
+    &__link
+        position: relative
+        font-size: 18px
+        color: var(--black)
+        transition: color .5s ease
+
+        &:before
+            position: absolute
+            top: calc(100% + 6px)
+            left: 0
+            display: block
+            width: 100%
+            height: 2px
+            border-radius: 2px
+            background-color: var(--red)
+            transition: transform .25s ease
+            transform: scaleX(0)
+            content: ""
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)
+
+            &:before
+                transform: scaleX(1)
+
+        &.is-active
+            font-weight: 700
+            color: var(--red)
+
+            &:before
+                transform: scaleX(1)

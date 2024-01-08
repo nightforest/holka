@@ -1,0 +1,96 @@
+.page-section
+    padding: 30px 0
+
+    @media ($max-md)
+        padding: 30px 0 15px
+
+    &__content
+        line-height: 1.55
+        font-weight: 300
+
+        @media ($max-md)
+            font-size: 14px
+
+        &:after
+            content: ""
+            clear: both
+            display: table
+
+    &__picture
+        display: inline-flex
+        max-width: 50%
+        float: left
+        margin-right: 30px
+        margin-bottom: 15px
+
+        @media ($max-md)
+            float: none
+            max-width: 100%
+            display: flex
+            margin: 0 0 1rem
+    
+    &__img
+        border-radius: 20px
+        max-width: 100%
+        height: auto
+
+        @media ($max-md)
+            width: 100%
+
+    &__descr
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        gap: 15px
+        margin-bottom: 10px
+    
+    &__info
+        display: flex
+        align-items: center
+        gap: 10px
+    
+    &__text
+
+        h3
+            font-size: 25px
+            margin: 0 0 1rem
+
+            @media ($max-md)
+                font-size: 18px
+
+        h4
+            font-size: 20px
+            margin: 0 0 1rem
+
+            @media ($max-md)
+                font-size: 16px
+
+        p
+
+            &:last-child
+                margin-bottom: 0
+    
+    &__bottom
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 15px
+        margin-top: 30px
+        padding-top: 30px
+        border-top: 1px solid #D9D9D9
+
+        @media ($max-md)
+            margin-top: 15px
+            padding-top: 15px
+            flex-direction: column
+
+        &-title
+            margin: 0
+            font-size: 18px
+    
+        &-download
+            margin-right: auto
+
+            @media ($max-md)
+                margin-right: 0

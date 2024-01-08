@@ -1,0 +1,32 @@
+.tags
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+        z-index: $z-index-1
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        height: 34px
+        min-width: 90px
+        border-radius: 100px
+        background: var(--red)
+        color: var(--white)
+        font-size: 14px
+        font-weight: 700
+        line-height: 1
+        padding: 5px 10px
+        transition: all .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--white)
+            background: var(--black)

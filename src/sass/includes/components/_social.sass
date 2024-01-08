@@ -1,0 +1,42 @@
+.social
+    font-style: normal
+
+    &__list
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        gap: 15px
+        margin: 0
+        padding: 0
+        list-style: none
+
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 40px
+        height: 40px
+        line-height: 1
+        color: var(--white)
+        background: var(--black)
+        border-radius: 50%
+        transition: all .5s ease
+            
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--black)
+            background: var(--white)
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06)
+
+        &--facebook
+            background: #0B84EE
+        
+        &--twitter
+            background: #55ACE3
+        
+        &--telegram
+            background: #27A6E5
+
+    &__icon
+        transition: transform .5s ease

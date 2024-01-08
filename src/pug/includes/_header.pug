@@ -1,0 +1,45 @@
+header.header
+    .container.header__container
+        button.burger.header__burger(type="button" aria-label="Open mobile menu" aria-expanded="false" data-nav-toggle)
+            .burger__line
+            .burger__line
+            .burger__line
+            
+        .logo.header__logo
+            a.logo__link(href="#" aria-label="logo")
+                svg.logo__img(width="160" height="68")
+                    use(xlink:href="img/sprite.svg#logo-ua")
+
+        nav.menu.header__menu
+            ul.menu__list
+                li.menu__item
+                    a.menu__link.is-active(href="#") Про нас
+                
+                li.menu__item
+                    a.menu__link(href="#") Публікації
+                
+                li.menu__item
+                    a.menu__link(href="#") Дослідження
+                
+                li.menu__item
+                    a.menu__link(href="#") Команда
+
+        .phone.header__phone
+            svg.phone__icon(width="22" height="22")
+                use(xlink:href="img/sprite.svg#phone")
+            
+            ul.phone__list
+                li.phone__item
+                    a.phone__number(href="tel:+380986660563") +38 098 666 05 63
+
+                li.phone__item
+                    a.phone__link(href="#") Підтримай нас
+        
+        .lang.is-dropdown.header__lang
+            button.lang__toggle.is-dropdown__toggle(type="button") UA
+                svg.lang__icon(width="12" height="7")
+                    use(xlink:href="img/sprite.svg#dropdown-arrow")
+
+            ul.lang__list
+                li.lang__item
+                    a.lang__link(href="#") EN

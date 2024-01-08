@@ -1,0 +1,68 @@
+.button
+    position: relative
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    gap: 10px
+    box-sizing: border-box
+    -webkit-tap-highlight-color: transparent
+    outline: none
+    border: none
+    margin: 0
+    cursor: pointer
+    user-select: none
+    vertical-align: middle
+    appearance: none
+    text-decoration: none
+    font-size: 18px
+    font-weight: 700
+    line-height: 1
+    letter-spacing: 0
+    text-align: center
+    height: 42px
+    padding: 5px 20px
+    border-radius: 100px
+    color: var(--red)
+    background: var(--white)
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06)
+    transition: all .5s ease
+
+    &:hover,
+    &:active,
+    &:focus-visible
+        outline: none
+        color: var(--white)
+        background: var(--red)
+
+    &:disabled
+        background: var(--grey-disabled) !important
+        border-color: var(--grey-disabled) !important
+        color: var(--grey) !important
+        cursor: not-allowed
+
+    &--black
+        color: var(--white)
+        background: var(--black)
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)
+            background: var(--white)
+    
+    &--red
+        background: var(--red)
+        color: var(--white)
+        padding: 5px 15px 5px 5px
+        gap: 12px
+        font-size: 14px
+        height: 43px
+        border: 1px solid var(--white)
+        box-shadow: none
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            background: var(--white)
+            color: var(--red)
+            border-color: var(--red)

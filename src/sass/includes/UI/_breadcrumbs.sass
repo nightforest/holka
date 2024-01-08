@@ -1,0 +1,50 @@
+.breadcrumbs
+    margin-bottom: 10px
+
+    &__list
+        padding-left: 0
+        list-style: none
+        margin: 0
+        font-size: 0
+        text-align: center
+
+    &__item
+        line-height: 1.2
+        position: relative
+        color: var(--black)
+        display: inline
+        font-weight: 600
+        font-size: 14px
+
+        @media ($max-md)
+            font-size: 12px
+
+        &:after
+            display: inline-flex
+            width: 5px
+            height: 8px
+            background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.82011 4.39604L1.04856 7.83581C0.808646 8.05473 0.419663 8.05473 0.179864 7.83581C-0.0599547 7.61708 -0.0599547 7.26232 0.179864 7.04361L3.5171 3.99994L0.179961 0.956381C-0.0598577 0.737564 -0.0598577 0.382842 0.179961 0.164113C0.41978 -0.0547044 0.808743 -0.0547044 1.04866 0.164113L4.8202 3.60393C4.94011 3.71335 5 3.8566 5 3.99992C5 4.14332 4.94 4.28668 4.82011 4.39604Z' fill='%23952E34' style='fill:%23952E34;fill:color(display-p3 0.5843 0.1804 0.2039);fill-opacity:1;'/%3E%3C/svg%3E%0A") no-repeat center center
+            margin: 0 8px
+            content: ''
+
+            @media ($max-md)
+                margin: 0 5px
+
+        &:last-child
+            margin-right: 0
+
+            &:after
+                display: none
+
+    &__link
+        position: relative
+        color: var(--black)
+        font-weight: 300
+        text-decoration: none
+        display: inline
+        transition: all .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)

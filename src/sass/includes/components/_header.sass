@@ -1,0 +1,42 @@
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background: var(--white)
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, .1)
+    z-index: $z-index-3
+    
+    &__container
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 15px
+        padding: 20px 15px
+
+        @media ($max-md)
+            padding: 15px
+
+    &__logo
+
+        .logo__img
+            
+            @media ($max-md)
+                height: 38px
+                width: auto
+
+    &__burger
+        display: none
+
+        @media ($max-md)
+            display: flex
+
+    &__phone
+
+        @media ($max-lg)
+            display: none
+
+    &__menu
+
+        @media ($max-md)
+            display: none

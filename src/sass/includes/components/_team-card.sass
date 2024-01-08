@@ -1,0 +1,68 @@
+.team-card
+
+    &__picture
+        display: flex
+        border-radius: 20px
+        overflow: hidden
+        isolation: isolate
+        width: 100%
+        height: 230px
+        margin-bottom: 15px
+
+        @media ($max-lg)
+            height: auto
+
+    &__img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        transition: transform 2.5s ease
+        transform: translate3d(0, 0, 0)
+
+    &__link
+        color: var(--black)
+        transition: color .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible
+            color: var(--red)
+
+            .team-card__img
+                transform: scale(1.1)
+
+    &__title
+        position: relative
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        gap: 5px
+        margin-bottom: 15px
+
+        @media ($max-md)
+            justify-content: center
+
+    &__name
+        margin: 0
+        font-size: 22px
+        line-height: 1.2
+
+    &__descr
+        margin: 0
+        font-size: 18px
+        line-height: 1.3
+
+        @media ($max-md)
+            text-align: center
+
+        &:not(:last-child)
+            margin-bottom: 10px
+
+    &__phone
+
+        @media ($max-md)
+            justify-content: center
+
+        .phone__number
+            font-size: 18px
+            line-height: 1.4

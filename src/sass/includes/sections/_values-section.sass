@@ -1,0 +1,54 @@
+.values-section
+    padding: 70px 0
+    background: #F5F5F5
+
+    @media ($max-md)
+        padding: 30px 0
+
+    &__title
+        margin-bottom: 25px
+
+        @media ($max-md)
+            margin-bottom: 15px
+
+    &__list
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        gap: 1px
+        margin: 0 0 20px
+        padding: 0
+        list-style: none
+        overflow: hidden
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+            gap: 15px
+    
+    &__item
+        grid-column: 4 span
+        box-shadow: 0 0 0 1px #c5c5c5
+        padding: 15px 20px
+        min-height: 165px
+
+        @media ($max-lg)
+            grid-column: 6 span
+        
+        @media ($max-md)
+            box-shadow: none
+            border-bottom: 1px solid #c5c5c5
+            min-height: 0
+            padding: 0 0 15px
+
+        &:last-child
+
+            @media ($max-md)
+                border: none
+                padding: 0
+
+    &__buttons
+        text-align: center
+
+    &__button
+        max-width: 220px
+        width: 100%
