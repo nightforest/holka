@@ -25,7 +25,7 @@ section.page-section
                     .user.page-section__user
                         svg.user__icon(width="18" height="17")
                             use(xlink:href="img/sprite.svg#user")
-                        span.user__name Іванов І.
+                        span.user__name Іванова І.
                     
                     time.date.page-section__date 16.12.2023
             
@@ -43,6 +43,14 @@ section.page-section
                 p Тут ви знайдете список ідей для бізнесу, які потребують мінімального стартового капіталу та матимуть попит у вашому місті. Навіть більше — отримаєте перелік необхідних документів для запуску бізнесу та шаблони усіх робочих документів.
         
         .page-section__bottom
+            .author.page-section__bottom-author
+                a.author__link(href="#")
+                    picture.author__photo
+                        img.author__photo-img(src="img/author-img.webp" srcset="img/author-img@2x.webp 2x" loading="lazy" width="80" height="80"  alt="alt")
+                    
+                    span.author__name Іванова І.
+
+
             h3.page-section__bottom-title Поширюйте у соц мережах
 
             address.social.page-section__bottom-social
