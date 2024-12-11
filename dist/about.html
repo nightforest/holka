@@ -29,8 +29,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
-      <script type="module" crossorigin src="/assets/main-aa8ab2b9.js"></script>
-      <link rel="stylesheet" href="/assets/main-2a62581a.css">
+      <script type="module" crossorigin src="/assets/main-b86f180e.js"></script>
+      <link rel="stylesheet" href="/assets/main-88e65c20.css">
     </head>
     <body>
         <!-- Header -->
@@ -48,7 +48,13 @@
         </svg></a></div>
     <nav class="menu header__menu">
       <ul class="menu__list">
-        <li class="menu__item"><a class="menu__link is-active" href="#">Про нас</a></li>
+        <li class="menu__item"><a class="menu__link is-active" href="#" data-toggle="menu-dropdown" aria-expanded="false">Про нас</a>
+          <ul class="menu__dropdown" id="menu-dropdown" aria-hidden="true">
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link is-active" href="#">Хто ми</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Проекти</a></li>
+            <li class="menu__dropdown-item"><a class="menu__dropdown-link" href="#">Команда</a></li>
+          </ul>
+        </li>
         <li class="menu__item"><a class="menu__link" href="#">Публікації</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Дослідження</a></li>
         <li class="menu__item"><a class="menu__link" href="#">Команда</a></li>
@@ -307,7 +313,13 @@
     <div class="mobile-nav__inner">
       <nav class="mobile-nav-menu">
         <ul class="mobile-nav-menu__list">
-          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Про нас</a></li>
+          <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Про нас</a>
+            <ul class="mobile-nav-menu__sub">
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Хто ми</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Проекти</a></li>
+              <li class="mobile-nav-menu__sub-item"><a class="mobile-nav-menu__sub-link" href="#">Команда</a></li>
+            </ul>
+          </li>
           <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Публікації</a></li>
           <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Дослідження</a></li>
           <li class="mobile-nav-menu__item"><a class="mobile-nav-menu__link" href="#">Команда</a></li>

@@ -1,0 +1,145 @@
+section.person-section
+    .container.person-section__container
+        .person-section__row
+            .person-section__left
+                picture.person-section__photo
+                    img.person-section__photo-img(src="img/person.webp" srcset="img/person@2x.webp 2x" loading="lazy" width="255" height="353" alt="")
+
+            .person-section__right
+                nav.breadcrumbs.person-section__breadcrumbs(aria-label="breadcrumb")
+                    ul.breadcrumbs__list
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Головна
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Рішення парламенту
+                        li.breadcrumbs__item
+                            a.breadcrumbs__link(href="#") Містобудівна “реформа”
+                        li.breadcrumbs__item(aria-current="page") Аліксійчук Олександр Васильович
+
+                h1.section-title.person-section__title Аліксійчук Олександр Васильович
+
+                .person-section__info
+                    h3 Фракція
+                    p Фракція політичної партії "СЛУГА НАРОДУ"
+
+                .person-section__info
+                    h3 Регіон
+                    p Рівненська область
+
+                .progress.person-section__progress-group
+                    picture.person-section__recharge
+                        img.person-section__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="257" height="35" alt="")
+
+                    .progress.person-section__progress
+                        .progress__thumbs
+                            svg.progress__thumb-up(width="30" height="30")
+                                use(xlink:href="img/sprite.svg#thumb-up")
+                            
+                            svg.progress__thumb-down(width="30" height="30")
+                                use(xlink:href="img/sprite.svg#thumb-down")
+
+                        .progress__bar.progress__bar--big
+                            .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                            .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                        
+                        .progress__descr
+                            p Зелений колір – голосування за корисні проєкти і проти шкідливих, червоний колір – голосування проти корисних проєктів і за шкідливі. Жовтим – голосування “утримався”.
+
+        .stats
+            h2.stats__title Голосування
+
+            .stats__group
+                .stats__header
+                    svg.stats__icon.stats__icon--green(width="30" height="30")
+                        use(xlink:href="img/sprite.svg#thumb-up")
+
+                    h3.stats__subtitle За
+                
+                ul.stats__list
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                        
+            .stats__group
+                .stats__header
+                    svg.stats__icon.stats__icon--red(width="30" height="30")
+                        use(xlink:href="img/sprite.svg#thumb-down")
+
+                    h3.stats__subtitle Проти
+                
+                ul.stats__list
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                        
+            .stats__group
+                .stats__header
+                    svg.stats__icon.stats__icon--yellow(width="30" height="30")
+                        use(xlink:href="img/sprite.svg#palm")
+
+                    h3.stats__subtitle Утримався
+                
+                ul.stats__list
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--red(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”
+                    
+                    li.stats__item
+                        a.stats__link.stats__link--green(href="#") Містобудівна “реформа”

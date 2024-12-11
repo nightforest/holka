@@ -1,0 +1,447 @@
+section.vote-section
+    .container.vote-section__container
+        header.page-header.vote-section__header
+            nav.breadcrumbs(aria-label="breadcrumb")
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Головна
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Рішення парламенту
+                    li.breadcrumbs__item(aria-current="page") Містобудівна “реформа”
+
+            h1.section-title Містобудівна “реформа”
+
+            .inline-tags.vote-section__inline-tags
+                span.inline-tags__title Теги:
+
+                ul.inline-tags__list
+                    li.inline-tags__item
+                        a.inline-tags__link(href="#") антикор
+                    li.inline-tags__item
+                        a.inline-tags__link(href="#") відбудова
+                    li.inline-tags__item
+                        a.inline-tags__link(href="#") екологія
+
+            .section-descr
+                p Законопроєкт розкритикувала низка ГО, Європарамнннт та Єврокомісія. Королівський інститут Chatham House вбачає ризики для виникнення будівеьного картелю. Виступили проти: DEJURE, Автомайдан, Дзеркало тижня
+        
+        .vote-section__filter-group
+            .filter.vote-section__filter
+                ul.filter__list
+                    li.filter__item
+                        button.button.button--outline-red.filter__button.is-active(type="button") За алфавітом
+                    
+                    li.filter__item
+                        button.button.button--outline-red.filter__button(type="button") По фракціям
+                    
+                    li.filter__item
+                        button.button.button--outline-red.filter__button(type="button") За областями
+                
+                .filter-select
+                    button.filter-select__toggle(type="button" data-toggle="filter-dropdown" aria-expanded="false")
+                        span.filter-select__toggle-title За алфавітом
+                        svg.filter-select__toggle-arrow(width="12" height="7")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                    
+                    #filter-dropdown.filter-select__dropdown(aria-hidden="true")
+                        ul.filter-select__list
+                            li.filter-select__item
+                                button.filter-select__button.is-active(type="button") За алфавітом
+
+                            li.filter-select__item
+                                button.filter-select__button(type="button") По фракціям
+                            
+                            li.filter-select__item
+                                button.filter-select__button(type="button") За областями
+
+            picture.vote-section__recharge
+                img.vote-section__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="257" height="35" alt="")
+
+        ul.vote-section__list
+            li.vote-section__item.animation-down(data-delay='0.2')
+                .top-card.top-card--green
+                    .top-card__header
+                        h2.top-card__caption За
+                    
+                    .persons-slider-wrap
+                        .swiper.persons-slider
+                            .swiper-wrapper.persons-slider__wrapper
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 35%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                        
+                        button.button.persons-slider__prev(type="button" aria-label="previous slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.button.persons-slider__next(type="button" aria-label="next slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+                    a.button.button--red.top-card__more-button(href="#")
+                        svg.button__icon(width="32" height="32")
+                            use(xlink:href="img/sprite.svg#name-group")
+                        | Показати всіх
+
+            li.vote-section__item.animation-down(data-delay='0.2')
+                .top-card.top-card--red
+                    .top-card__header
+                        h2.top-card__caption Проти
+
+                    .persons-slider-wrap
+                        .swiper.persons-slider
+                            .swiper-wrapper.persons-slider__wrapper
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 35%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                        
+                        button.button.persons-slider__prev(type="button" aria-label="previous slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.button.persons-slider__next(type="button" aria-label="next slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+                    a.button.button--red.top-card__more-button(href="#")
+                        svg.button__icon(width="32" height="32")
+                            use(xlink:href="img/sprite.svg#name-group")
+                        | Показати всіх
+
+            li.vote-section__item.animation-down(data-delay='0.2')
+                .top-card
+                    .top-card__header
+                        h2.top-card__caption Утримався
+                    
+                    .persons-slider-wrap
+                        .swiper.persons-slider
+                            .swiper-wrapper.persons-slider__wrapper
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 35%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                        
+                        button.button.persons-slider__prev(type="button" aria-label="previous slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.button.persons-slider__next(type="button" aria-label="next slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+                    a.button.button--red.top-card__more-button(href="#")
+                        svg.button__icon(width="32" height="32")
+                            use(xlink:href="img/sprite.svg#name-group")
+                        | Показати всіх
+
+            li.vote-section__item.animation-down(data-delay='0.2')
+                .top-card
+                    .top-card__header
+                        h2.top-card__caption Не голосував
+
+                    .persons-slider-wrap
+                        .swiper.persons-slider
+                            .swiper-wrapper.persons-slider__wrapper
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 35%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                        
+                        button.button.persons-slider__prev(type="button" aria-label="previous slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.button.persons-slider__next(type="button" aria-label="next slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+                    a.button.button--red.top-card__more-button(href="#")
+                        svg.button__icon(width="32" height="32")
+                            use(xlink:href="img/sprite.svg#name-group")
+                        | Показати всіх

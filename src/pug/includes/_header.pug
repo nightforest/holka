@@ -13,7 +13,17 @@ header.header
         nav.menu.header__menu
             ul.menu__list
                 li.menu__item
-                    a.menu__link.is-active(href="#") Про нас
+                    a.menu__link.is-active(href="#" data-toggle="menu-dropdown" aria-expanded="false") Про нас
+
+                    ul#menu-dropdown.menu__dropdown(aria-hidden="true")
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link.is-active(href="#") Хто ми
+                        
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link(href="#") Проекти
+                        
+                        li.menu__dropdown-item
+                            a.menu__dropdown-link(href="#") Команда
                 
                 li.menu__item
                     a.menu__link(href="#") Публікації

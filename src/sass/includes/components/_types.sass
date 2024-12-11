@@ -1,0 +1,81 @@
+.types
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        gap: 10px
+        z-index: $z-index-1
+        margin: 0
+        padding: 0
+        list-style: none
+
+        &--center
+            justify-content: center
+            gap: 25px
+
+            @media ($max-md)
+                gap: 15px
+
+    &__link
+        display: flex
+        align-items: center
+        justify-content: center
+        text-align: center
+        height: 34px
+        min-width: 120px
+        border-radius: 100px
+        background: none
+        border: 1px solid var(--black)
+        color: var(--black)
+        font-size: 14px
+        font-weight: 700
+        line-height: 1
+        padding: 5px 10px
+        transition: all .5s ease
+
+        &:hover,
+        &:active,
+        &:focus-visible,
+        &.is-active
+            color: var(--white)
+            background: var(--black)
+        
+        &--green
+            border-color: var(--light-green)
+            color: var(--light-green)
+
+            &:hover,
+            &:active,
+            &:focus-visible,
+            &.is-active
+                background: var(--light-green)
+
+        &--yellow
+            border-color: var(--yellow)
+            color: var(--yellow)
+
+            &:hover,
+            &:active,
+            &:focus-visible,
+            &.is-active
+                background: var(--yellow)
+        
+        &--red
+            border-color: var(--red)
+            color: var(--red)
+
+            &:hover,
+            &:active,
+            &:focus-visible,
+            &.is-active
+                background: var(--red)
+
+        &--blue
+            border-color: var(--light-blue)
+            color: var(--light-blue)
+
+            &:hover,
+            &:active,
+            &:focus-visible,
+            &.is-active
+                background: var(--light-blue)

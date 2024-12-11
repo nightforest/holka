@@ -52,7 +52,7 @@
             display: flex
             flex-direction: column
             align-items: center
-            gap: 40px
+            gap: 20px
             text-align: center
 
             &:not(:last-child)
@@ -67,14 +67,38 @@
             &:hover,
             &:active,
             &:focus-visible
-                color: var(--blue)
+                color: var(--red)
 
             &.is-active
-                color: var(--blue)
+                color: var(--red)
         
         &__button
             width: 100%
             max-width: 220px
+
+        &__sub
+            margin: 0
+            padding: 0
+            list-style: none
+
+            &-item
+
+                &:not(:last-child)
+                    margin-bottom: 10px
+
+            &-link
+                font-size: 16px
+                line-height: 1.2
+                color: #999
+                transition: color .5s ease
+
+                &:hover,
+                &:active,
+                &:focus-visible
+                    color: var(--red)
+
+                &.is-active
+                    color: var(--red)
     
     &__contacts
         display: flex

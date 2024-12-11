@@ -1,0 +1,113 @@
+.person-section
+    padding: 30px 0 50px
+
+    @media ($max-md)
+        padding: 30px 0
+
+    &__row
+        display: grid
+        grid-template-columns: 255px 1fr
+        gap: 0 30px
+
+        @media ($max-lg)
+            grid-template-columns: 120px 1fr
+
+        @media ($max-md)
+            display: flex
+            flex-direction: column
+
+        &:not(:last-child)
+            margin-bottom: 30px
+
+    &__left
+
+        @media ($max-md)
+            display: contents
+    
+    &__right
+
+        @media ($max-md)
+            display: contents
+
+    &__breadcrumbs
+
+        @media ($max-md)
+            order: -2
+
+        .breadcrumbs__list
+            text-align: left
+
+            @media ($max-md)
+                text-align: center
+
+    &__title
+        text-align: left
+
+        @media ($max-md)
+            order: -1
+            text-align: center
+            margin-bottom: 15px
+    
+    &__info
+        font-size: 24px
+        margin-bottom: 5px
+
+        @media ($max-md)
+            font-size: 18px
+            text-align: center
+
+        h3
+            font-size: 24px
+            color: var(--red)
+
+            @media ($max-md)
+                font-size: 18px
+
+        p
+            margin: 0
+
+            &:not(:last-child)
+                margin-bottom: 1rem
+    
+    &__photo
+        display: flex
+        width: 100%
+        aspect-ratio: 1 / 1.38
+        border-radius: 20px
+        overflow: hidden
+
+        @media ($max-md)
+            margin-bottom: 10px
+
+        &-img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+    &__progress-group
+        display: flex
+        align-items: flex-start
+        flex-direction: column
+        width: 100%
+        margin-top: -50px
+
+        @media ($max-lg)
+            margin-top: 0
+
+    &__recharge
+        display: flex
+        margin-left: auto
+        margin-bottom: 15px
+
+        @media ($max-md)
+            width: 190px
+            margin: 0 auto 15px
+        
+        &-img
+            max-width: 100%
+            height: auto
+
+    &__progress
+        padding: 12px 15px
+        background: #F0F0F2
+        border-radius: 20px

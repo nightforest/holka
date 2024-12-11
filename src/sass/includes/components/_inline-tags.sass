@@ -1,0 +1,30 @@
+.inline-tags
+    font-size: 14px
+    font-weight: 700
+
+    &__list
+        display: inline
+        padding-left: 0
+        list-style: none
+        margin: 0
+        font-size: 0
+
+    &__item
+        line-height: 1.2
+        position: relative
+        color: var(--black)
+        display: inline
+        font-weight: 600
+        font-size: 14px
+
+        &:not(:last-child)
+
+            &:after
+                margin-right: .2em
+                content: ","
+
+    &__link
+        text-decoration-line: underline
+        text-decoration-thickness: .5px
+        text-underline-offset: 2px
+        

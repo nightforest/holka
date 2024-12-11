@@ -1,0 +1,423 @@
+section.decision-section
+    .container.decision-section__container
+        header.page-header.decision-section__header
+            nav.breadcrumbs(aria-label="breadcrumb")
+                ul.breadcrumbs__list
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Головна
+                    li.breadcrumbs__item
+                        a.breadcrumbs__link(href="#") Перезаряди країну
+                    li.breadcrumbs__item(aria-current="page") Рішення парламенту
+
+            h1.section-title Рішення парламенту
+
+        nav.types.decision-section__types
+            ul.types__list.types__list--center
+                li.types__item
+                    a.types__link.types__link--green(href="#") Корисні
+                
+                li.types__item
+                    a.types__link.types__link--red(href="#") Шкідливі
+                
+                li.types__item
+                    a.types__link.types__link--yellow(href="#") На розгляді
+                
+                li.types__item
+                    a.types__link.types__link--blue(href="#") Відголосовані
+
+        ul.decision-section__list
+            li.decision-section__item.animation-down(data-delay='0.2')
+                article.decision-card.decision-card--red
+                    header.decision-card__header
+                        .decision-card__header-left
+                            .decision-card__number 5655
+                            h3.decision-card__title Містобудівна “реформа”
+
+                        .decision-card__header-right
+                            picture.decision-card__recharge
+                                img.decision-card__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="160" height="22" alt="")
+
+                            .types.decision-card__types
+                                ul.types__list
+                                    li.types__item
+                                        a.types__link.types__link--red.is-active(href="#") Шкідливий
+                                    
+                                    li.types__item
+                                        a.types__link.types__link--yellow(href="#") На розгляді
+               
+                    .decision-card__author Автор: 
+                        a.decision-card__author-link(href="#") Олена Шуляк (СН)
+                    
+                    .decision-card__text
+                        p Законопроєкт розкритикувала низка ГО, Європарамнннт та Єврокомісія. Королівський інститут Chatham House вбачає ризики для виникнення будівеьного картелю. Виступили проти: DEJURE, Автомайдан, Дзеркало тижня
+                    
+                    .inline-tags.decision-card__inline-tags
+                        span.inline-tags__title Теги:
+
+                        ul.inline-tags__list
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") антикор
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") відбудова
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") екологія
+
+                    #decision-card-content-1.decision-card__content(aria-hidden="true")
+                        .decision-card__content-inner
+                            .decision-card__chart - Тут статистика -
+
+                            .decision-card__bottom
+                                .logo.decision-card__logo
+                                    a.logo__link(href="#" aria-label="logo")
+                                        svg.logo__img(width="120" height="59")
+                                            use(xlink:href="img/sprite.svg#logo-ua")
+
+                                picture.decision-card__cid
+                                    img.decision-card__cid-img(src="img/cid.webp" srcset="img/cid@2x.webp 2x" loading="lazy" width="90" height="52" alt="")
+
+                                .decision-card__info
+                                    p Дані з веб-сайту Верховної Ради зібрано та опрацьовано 
+                                        a.decision-card__info-link(href="#") ГС “Центр розвитку інновацій”
+                                            
+                                a.button.button--red.decision-card__button(href="#")
+                                    svg.button__icon(width="32" height="32")
+                                        use(xlink:href="img/sprite.svg#name-group")
+                                    | Поіменне голосування
+
+                    button.button.button--outline-red.decision-card__toggle(type="button" data-expanded-caption='["Розгорнути", "Згорнути"]' aria-expanded="false" data-trigger="decision-card-content-1")
+                        svg.button__icon(width="18" height="8")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                        span Розгорнути
+            
+            li.decision-section__item.animation-down(data-delay='0.2')
+                article.decision-card.decision-card--green
+                    header.decision-card__header
+                        .decision-card__header-left
+                            .decision-card__number 5655
+                            h3.decision-card__title Містобудівна “реформа”
+
+                        .decision-card__header-right
+                            picture.decision-card__recharge
+                                img.decision-card__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="160" height="22" alt="")
+
+                            .types.decision-card__types
+                                ul.types__list
+                                    li.types__item
+                                        a.types__link.types__link--green.is-active(href="#") Корисний
+                                    
+                                    li.types__item
+                                        a.types__link.types__link--blue(href="#") Відголосований
+               
+                    .decision-card__author Автор: 
+                        a.decision-card__author-link(href="#") Олена Шуляк (СН)
+                    
+                    .decision-card__text
+                        p Законопроєкт розкритикувала низка ГО, Європарамнннт та Єврокомісія. Королівський інститут Chatham House вбачає ризики для виникнення будівеьного картелю. Виступили проти: DEJURE, Автомайдан, Дзеркало тижня
+                    
+                    .inline-tags.decision-card__inline-tags
+                        span.inline-tags__title Теги:
+
+                        ul.inline-tags__list
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") антикор
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") відбудова
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") екологія
+
+                    #decision-card-content-2.decision-card__content(aria-hidden="true")
+                        .decision-card__content-inner
+                            .decision-card__chart - Тут статистика -
+
+                            .decision-card__bottom
+                                .logo.decision-card__logo
+                                    a.logo__link(href="#" aria-label="logo")
+                                        svg.logo__img(width="120" height="59")
+                                            use(xlink:href="img/sprite.svg#logo-ua")
+
+                                picture.decision-card__cid
+                                    img.decision-card__cid-img(src="img/cid.webp" srcset="img/cid@2x.webp 2x" loading="lazy" width="90" height="52" alt="")
+
+                                .decision-card__info
+                                    p Дані з веб-сайту Верховної Ради зібрано та опрацьовано 
+                                        a.decision-card__info-link(href="#") ГС “Центр розвитку інновацій”
+                                            
+                                a.button.button--red.decision-card__button(href="#")
+                                    svg.button__icon(width="32" height="32")
+                                        use(xlink:href="img/sprite.svg#name-group")
+                                    | Поіменне голосування
+
+                    button.button.button--outline-red.decision-card__toggle(type="button" data-expanded-caption='["Розгорнути", "Згорнути"]' aria-expanded="false" data-trigger="decision-card-content-2")
+                        svg.button__icon(width="18" height="8")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                        span Розгорнути
+
+            li.decision-section__item.animation-down(data-delay='0.2')
+                article.decision-card
+                    header.decision-card__header
+                        .decision-card__header-left
+                            .decision-card__number 5655
+                            h3.decision-card__title Містобудівна “реформа”
+
+                        .decision-card__header-right
+                            picture.decision-card__recharge
+                                img.decision-card__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="160" height="22" alt="")
+
+                            .types.decision-card__types
+                                ul.types__list
+                                    li.types__item
+                                        a.types__link.types__link--red.is-active(href="#") Шкідливий
+                                    
+                                    li.types__item
+                                        a.types__link.types__link--yellow(href="#") На розгляді
+               
+                    .decision-card__author Автор: 
+                        a.decision-card__author-link(href="#") Олена Шуляк (СН)
+                    
+                    .decision-card__text
+                        p Законопроєкт розкритикувала низка ГО, Європарамнннт та Єврокомісія. Королівський інститут Chatham House вбачає ризики для виникнення будівеьного картелю. Виступили проти: DEJURE, Автомайдан, Дзеркало тижня
+                    
+                    .inline-tags.decision-card__inline-tags
+                        span.inline-tags__title Теги:
+
+                        ul.inline-tags__list
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") антикор
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") відбудова
+                            li.inline-tags__item
+                                a.inline-tags__link(href="#") екологія
+
+                    #decision-card-content-3.decision-card__content(aria-hidden="true")
+                        .decision-card__content-inner
+                            .decision-card__chart - Тут статистика -
+
+                            .decision-card__bottom
+                                .logo.decision-card__logo
+                                    a.logo__link(href="#" aria-label="logo")
+                                        svg.logo__img(width="120" height="59")
+                                            use(xlink:href="img/sprite.svg#logo-ua")
+
+                                picture.decision-card__cid
+                                    img.decision-card__cid-img(src="img/cid.webp" srcset="img/cid@2x.webp 2x" loading="lazy" width="90" height="52" alt="")
+
+                                .decision-card__info
+                                    p Дані з веб-сайту Верховної Ради зібрано та опрацьовано 
+                                        a.decision-card__info-link(href="#") ГС “Центр розвитку інновацій”
+                                            
+                                a.button.button--red.decision-card__button(href="#")
+                                    svg.button__icon(width="32" height="32")
+                                        use(xlink:href="img/sprite.svg#name-group")
+                                    | Поіменне голосування
+
+                    button.button.button--outline-red.decision-card__toggle(type="button" data-expanded-caption='["Розгорнути", "Згорнути"]' aria-expanded="false" data-trigger="decision-card-content-3")
+                        svg.button__icon(width="18" height="8")
+                            use(xlink:href="img/sprite.svg#dropdown-arrow")
+                        span Розгорнути
+
+            li.decision-section__item.animation-down(data-delay='0.2')
+                .top-card.top-card--green
+                    .top-card__header
+                        .top-card__header-left
+                            h2.top-card__title
+                                svg.top-card__title-logo(width="78" height="68")
+                                    use(xlink:href="img/sprite.svg#logo-single")
+                                | ТОП 5 хто заряджає країну
+                            p.top-card__descr Зелений колір – голосування за корисні проєкти і проти шкідливих, червоний колір – голосування проти корисних проєктів і за шкідливі. Жовтим – голосування “утримався”.
+
+                        .top-card__header-right
+                            picture.top-card__recharge
+                                img.top-card__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="257" height="35" alt="")
+                    
+                    .persons-slider-wrap
+                        .swiper.persons-slider
+                            .swiper-wrapper.persons-slider__wrapper
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 35%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                        
+                        button.button.persons-slider__prev(type="button" aria-label="previous slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.button.persons-slider__next(type="button" aria-label="next slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+            li.decision-section__item.animation-down(data-delay='0.2')
+                .top-card.top-card--red
+                    .top-card__header
+                        .top-card__header-left
+                            h2.top-card__title
+                                svg.top-card__title-logo(width="78" height="68")
+                                    use(xlink:href="img/sprite.svg#logo-single")
+                                | ТОП 5 хто розряджає країну
+                            p.top-card__descr Зелений колір – голосування за корисні проєкти і проти шкідливих, червоний колір – голосування проти корисних проєктів і за шкідливі. Жовтим – голосування “утримався”.
+
+                        .top-card__header-right
+                            picture.top-card__recharge
+                                img.top-card__recharge-img(src="img/recharge.webp" srcset="img/recharge@2x.webp 2x" loading="lazy" width="257" height="35" alt="")
+                    
+                    .persons-slider-wrap
+                        .swiper.persons-slider
+                            .swiper-wrapper.persons-slider__wrapper
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="56" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 35%" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 55%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-1.webp" srcset="img/person-img-1@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Аліксійчук Олександр Васильович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 70%" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 5%" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100")
+
+                                .swiper-slide.persons-slider__slide
+                                    article.person-card
+                                        picture.person-card__picture
+                                            img.person-card__img(src="img/person-img-2.webp" srcset="img/person-img-2@2x.webp 2x" loading="lazy" width="165" height="189" alt="alt")
+                                        
+                                        h3.person-card__name Ананченко Михайло Олегович
+
+                                        .progress.person-card__progress
+                                            .progress__thumbs
+                                                svg.progress__thumb-up(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-up")
+                                                
+                                                svg.progress__thumb-down(width="20" height="21")
+                                                    use(xlink:href="img/sprite.svg#thumb-down")
+
+                                            .progress__bar
+                                                .progress__bar-line(style="--progress: 56%" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100")
+                                                .progress__bar-line(style="--progress: 25%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                        
+                        button.button.persons-slider__prev(type="button" aria-label="previous slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-left")
+
+                        button.button.persons-slider__next(type="button" aria-label="next slide")
+                            svg.button__icon(width="7" height="12")
+                                use(xlink:href="img/sprite.svg#arrow-right")
+
+        a.button.button--red.decision-section__button(href="#")
+            svg.button__icon(width="32" height="32")
+                use(xlink:href="img/sprite.svg#city")
+            span Київрада

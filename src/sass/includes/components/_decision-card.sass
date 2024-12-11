@@ -1,0 +1,165 @@
+.decision-card
+    position: relative
+    padding: 25px 40px
+    border-radius: 20px
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06), 0 0 4px 0 rgba(0, 0, 0, .06)
+    border: 2px solid transparent
+    background: var(--white)
+
+    @media ($max-md)
+        padding: 20px
+
+    &--green
+        border-color: var(--light-green)
+    
+    &--red
+        border-color: var(--red)
+    
+    &__header
+        display: flex
+        justify-content: space-between
+        gap: 10px
+        margin-bottom: 5px
+
+        @media ($max-md)
+            flex-direction: column
+            margin-bottom: 10px
+
+        &-right
+            display: flex
+            align-items: flex-start
+            gap: 20px
+
+    &__recharge
+        display: flex
+
+        @media ($max-md)
+            position: absolute
+            top: 20px
+            right: 20px
+            width: 120px
+        
+        &-img
+            max-width: 100%
+            height: auto
+    
+    &__types
+
+        .types__list
+            flex-direction: column
+
+            @media ($max-md)
+                flex-direction: row
+    
+    &__number
+        margin-bottom: 5px
+        font-size: 18px
+        font-weight: 600
+        color: var(--red)
+
+        @media ($max-md)
+            font-size: 14px
+    
+    &__title
+        font-size: 25px
+
+        @media ($max-md)
+            font-size: 18px
+    
+    &__author
+        margin-bottom: 8px
+        font-size: 14px
+        color: var(--red)
+
+        &-link
+            font-weight: 700
+            text-decoration-line: underline
+            text-decoration-thickness: .5px
+            text-underline-offset: 2px
+
+    &__text
+        margin-bottom: 15px
+        font-size: 14px
+
+        p
+            margin-bottom: 0
+
+            &:not(:last-child)
+                margin-bottom: 1rem
+
+    &__inline-tags
+        margin-bottom: 15px
+
+    &__content
+        display: grid
+        grid-template-rows: 0fr
+        transition: grid-template-rows .5s
+
+        &[aria-hidden="false"]
+            grid-template-rows: 1fr
+
+        &-inner
+            overflow: hidden
+
+    &__chart
+        margin-bottom: 15px
+
+    &__bottom
+        display: flex
+        align-items: center
+        gap: 20px 40px
+        margin-bottom: 15px
+
+        @media ($max-md)
+            flex-wrap: wrap
+            gap: 15px 0
+    
+    &__logo
+
+        @media ($max-md)
+            width: 50%
+            justify-content: center
+
+    &__cid
+        display: flex
+
+        @media ($max-md)
+            width: 50%
+            justify-content: center
+        
+        &-img
+            max-width: 100%
+            height: auto
+    
+    &__button
+        margin-left: auto
+
+        @media ($max-md)
+            margin: 0 auto
+
+    &__info
+        font-size: 14px
+        font-weight: 600
+
+        @media ($max-md)
+            width: 100%
+            text-align: center
+
+        p
+            margin-bottom: 0
+        
+        &-link
+            font-weight: 700
+            text-decoration-line: underline
+            text-decoration-thickness: .5px
+            text-underline-offset: 2px
+
+    &__toggle
+        display: flex
+        min-width: 156px
+        margin: 0 auto
+
+        &[aria-expanded="true"]
+
+            .button__icon
+                transform: rotateX(180deg)

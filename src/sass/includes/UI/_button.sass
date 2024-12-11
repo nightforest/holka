@@ -25,11 +25,12 @@
     color: var(--red)
     background: var(--white)
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06)
-    transition: all .5s ease
+    transition: background .5s ease, color .5s ease, border-color .5s ease
 
     &:hover,
     &:active,
-    &:focus-visible
+    &:focus-visible,
+    &.is-active
         outline: none
         color: var(--white)
         background: var(--red)
@@ -40,13 +41,17 @@
         color: var(--grey) !important
         cursor: not-allowed
 
+    &__icon
+        flex-shrink: 0
+
     &--black
         color: var(--white)
         background: var(--black)
 
         &:hover,
         &:active,
-        &:focus-visible
+        &:focus-visible,
+        &.is-active
             color: var(--red)
             background: var(--white)
     
@@ -62,7 +67,28 @@
 
         &:hover,
         &:active,
-        &:focus-visible
+        &:focus-visible,
+        &.is-active
             background: var(--white)
             color: var(--red)
             border-color: var(--red)
+    
+    &--outline-red
+        background: none
+        color: var(--red)
+        gap: 12px
+        font-size: 14px
+        height: 43px
+        border: 1px solid var(--red)
+        box-shadow: none
+
+        &:hover,
+        &:active,
+        &:focus-visible,
+        &.is-active
+            background: var(--red)
+            color: var(--white)
+            border-color: var(--red)
+
+    &--big
+        height: 60px

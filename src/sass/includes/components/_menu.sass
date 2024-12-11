@@ -15,6 +15,7 @@
             gap: 20px
 
     &__item
+        position: relative
         display: flex
         line-height: 1.2
        
@@ -51,3 +52,40 @@
 
             &:before
                 transform: scaleX(1)
+
+    &__dropdown
+        position: absolute
+        top: calc(100% + 20px)
+        left: 0
+        width: auto
+        background: var(--white)
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .06), 0 0 4px 0 rgba(0, 0, 0, .04)
+        border-radius: 20px
+        margin: 0
+        padding: 0
+        list-style: none
+        padding: 30px
+        opacity: 0
+        visibility: hidden
+        transform: translateY(10px)
+        transition: transform .25s ease, opacity .25s ease, visibility .25s ease
+
+        &[aria-hidden="false"]
+            visibility: visible
+            opacity: 1
+            transform: translateY(0)
+
+        &-item
+
+            &:not(:last-child)
+                margin-bottom: 20px
+
+        &-link
+            display: flex
+            padding: 0
+            font-size: 18px
+            color: var(--black)
+            transition: color .5s ease
+
+            &.is-active
+                color: var(--red)
